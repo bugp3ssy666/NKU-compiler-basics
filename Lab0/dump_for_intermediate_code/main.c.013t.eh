@@ -1,0 +1,50 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=3174, cgraph_uid=1, symbol_order=0)
+
+int main ()
+{
+  int n;
+  int t;
+  int i;
+  int b;
+  int a;
+  int D.3187;
+
+  a = 0;
+  b = 1;
+  i = 1;
+  scanf ("%d", &n);
+  n.0_1 = n;
+  if (n.0_1 > 50) goto <D.3185>; else goto <D.3186>;
+  <D.3185>:
+  printf ("Input exceeds maximum value %d\n", 50);
+  D.3187 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  goto <D.3190>;
+  <D.3186>:
+  printf ("%d\n", a);
+  printf ("%d\n", b);
+  goto <D.3182>;
+  <D.3183>:
+  t = b;
+  b = a + b;
+  printf ("%d\n", b);
+  a = t;
+  i = i + 1;
+  <D.3182>:
+  n.1_2 = n;
+  if (i < n.1_2) goto <D.3183>; else goto <D.3181>;
+  <D.3181>:
+  n = {CLOBBER(eol)};
+  goto <D.3189>;
+  <D.3190>:
+  n = {CLOBBER(eol)};
+  goto <D.3188>;
+  <D.3189>:
+  D.3187 = 0;
+  goto <D.3188>;
+  <D.3188>:
+  return D.3187;
+}
+
+

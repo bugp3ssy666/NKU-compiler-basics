@@ -1,0 +1,87 @@
+digraph "main.c.023t.warn-printf" {
+overlap=false;
+subgraph "cluster_main" {
+	style="dashed";
+	color="black";
+	label="main ()";
+	subgraph cluster_0_1 {
+	style="filled";
+	color="darkgreen";
+	fillcolor="grey88";
+	label="loop 1";
+	labeljust=l;
+	penwidth=2;
+	fn_0_basic_block_6 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 6\>:\l\
+|#\ a_3\ =\ PHI\ \<a_9(4),\ a_21(5)\>\l\
+|#\ b_4\ =\ PHI\ \<b_10(4),\ b_19(5)\>\l\
+|#\ i_5\ =\ PHI\ \<i_11(4),\ i_22(5)\>\l\
+|n.1_2\ =\ n;\l\
+|if\ (i_5\ \<\ n.1_2)\l\
+\ \ goto\ \<bb\ 5\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 7\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_5 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 5\>:\l\
+|t_18\ =\ b_4;\l\
+|b_19\ =\ a_3\ +\ b_4;\l\
+|printf\ (\"%d\\n\",\ b_19);\l\
+|a_21\ =\ t_18;\l\
+|i_22\ =\ i_5\ +\ 1;\l\
+}"];
+
+	}
+	fn_0_basic_block_0 [shape=Mdiamond,style=filled,fillcolor=white,label="ENTRY"];
+
+	fn_0_basic_block_1 [shape=Mdiamond,style=filled,fillcolor=white,label="EXIT"];
+
+	fn_0_basic_block_2 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 2\>:\l\
+|a_9\ =\ 0;\l\
+|b_10\ =\ 1;\l\
+|i_11\ =\ 1;\l\
+|scanf\ (\"%d\",\ &n);\l\
+|n.0_1\ =\ n;\l\
+|if\ (n.0_1\ \>\ 50)\l\
+\ \ goto\ \<bb\ 3\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 4\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_3 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 3\>:\l\
+|printf\ (\"Input\ exceeds\ maximum\ value\ %d\\n\",\ 50);\l\
+|_24\ =\ 1;\l\
+|//\ predicted\ unlikely\ by\ early\ return\ (on\ trees)\ predictor.\l\
+|n\ =\{v\}\ \{CLOBBER(eol)\};\l\
+goto\ \<bb\ 8\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_4 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 4\>:\l\
+|printf\ (\"%d\\n\",\ a_9);\l\
+|printf\ (\"%d\\n\",\ b_10);\l\
+goto\ \<bb\ 6\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_7 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 7\>:\l\
+|n\ =\{v\}\ \{CLOBBER(eol)\};\l\
+|_17\ =\ 0;\l\
+}"];
+
+	fn_0_basic_block_8 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 8\>:\l\
+|#\ _6\ =\ PHI\ \<_24(3),\ _17(7)\>\l\
+|\<L7\>:\l\
+|return\ _6;\l\
+}"];
+
+	fn_0_basic_block_0:s -> fn_0_basic_block_2:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_2:s -> fn_0_basic_block_3:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_2:s -> fn_0_basic_block_4:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_3:s -> fn_0_basic_block_8:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_4:s -> fn_0_basic_block_6:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_5:s -> fn_0_basic_block_6:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_6:s -> fn_0_basic_block_5:n [style="solid,bold",color=forestgreen,weight=10,constraint=true];
+	fn_0_basic_block_6:s -> fn_0_basic_block_7:n [style="solid,bold",color=darkorange,weight=10,constraint=true];
+	fn_0_basic_block_7:s -> fn_0_basic_block_8:n [style="solid,bold",color=black,weight=100,constraint=true];
+	fn_0_basic_block_8:s -> fn_0_basic_block_1:n [style="solid,bold",color=black,weight=10,constraint=true];
+	fn_0_basic_block_0:s -> fn_0_basic_block_1:n [style="invis",constraint=true];
+}
+}

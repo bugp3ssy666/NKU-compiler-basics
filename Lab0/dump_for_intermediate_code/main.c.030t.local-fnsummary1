@@ -1,0 +1,93 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=3174, cgraph_uid=1, symbol_order=0)
+
+
+Analyzing function body size: main/0
+
+IPA function summary for main/0
+  global time:     70.000000
+  self size:       26
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:9.000000, time:10.000000
+    size:2.000000, time:0.000000,  executed if:(not inlined)
+  calls:
+    printf/2 function body not available
+      freq:1.00 loop depth: 1 size: 3 time: 12
+    printf/2 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+    printf/2 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+    printf/2 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+    scanf/1 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+
+int main ()
+{
+  int n;
+  int t;
+  int i;
+  int b;
+  int a;
+  int D.3187;
+  int n.0_1;
+  int n.1_2;
+  int _6;
+  int _17;
+  int _24;
+
+  <bb 2> :
+  a_9 = 0;
+  b_10 = 1;
+  i_11 = 1;
+  scanf ("%d", &n);
+  n.0_1 = n;
+  if (n.0_1 > 50)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  printf ("Input exceeds maximum value %d\n", 50);
+  _24 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  n ={v} {CLOBBER(eol)};
+  goto <bb 8>; [INV]
+
+  <bb 4> :
+  printf ("%d\n", a_9);
+  printf ("%d\n", b_10);
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  t_18 = b_4;
+  b_19 = a_3 + b_4;
+  printf ("%d\n", b_19);
+  a_21 = t_18;
+  i_22 = i_5 + 1;
+
+  <bb 6> :
+  # a_3 = PHI <a_9(4), a_21(5)>
+  # b_4 = PHI <b_10(4), b_19(5)>
+  # i_5 = PHI <i_11(4), i_22(5)>
+  n.1_2 = n;
+  if (i_5 < n.1_2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 7> :
+  n ={v} {CLOBBER(eol)};
+  _17 = 0;
+
+  <bb 8> :
+  # _6 = PHI <_24(3), _17(7)>
+<L7>:
+  return _6;
+
+}
+
+
