@@ -1,0 +1,31 @@
+\contentsline {section}{\numberline { 一、}概述}{1}{section.1}%
+\contentsline {subsection}{\numberline {（一）}实验目的}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {（二）}小组分工}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {（三）}实验环境}{1}{subsection.1.3}%
+\contentsline {section}{\numberline { 二、}实验一：深入了解编译流程和编译器功能}{2}{section.2}%
+\contentsline {subsection}{\numberline {（一）}总流程}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {（二）}预处理器}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {1.}预处理的具体功能}{4}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.}进行预处理并验证功能}{4}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {（三）}编译器}{6}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {1.}词法分析}{7}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.}语法分析}{11}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {3.}语义分析}{15}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {4.}中间代码生成}{15}{subsubsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {5.}代码优化}{20}{subsubsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {6.}代码生成}{23}{subsubsection.2.3.6}%
+\contentsline {subsection}{\numberline {（四）}汇编器}{23}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {1.}汇编器的具体功能}{23}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.}反汇编与汇编程序分析}{24}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {（五）}链接器}{27}{subsection.2.5}%
+\contentsline {subsection}{\numberline {（六）}运行程序}{27}{subsection.2.6}%
+\contentsline {section}{\numberline { 三、}实验二：LLVM IR编程}{28}{section.3}%
+\contentsline {subsection}{\numberline {（一）}SysY程序编写}{28}{subsection.3.1}%
+\contentsline {subsection}{\numberline {（二）}LLVM IR编程}{31}{subsection.3.2}%
+\contentsline {section}{\numberline { 四、}实验三：ARM 汇编编程}{39}{section.4}%
+\contentsline {subsection}{\numberline {（一）}SysY程序}{39}{subsection.4.1}%
+\contentsline {subsection}{\numberline {（二）}ARM 汇编代码设计过程}{39}{subsection.4.2}%
+\contentsline {subsection}{\numberline {（三）}ARM 汇编代码综合展示}{45}{subsection.4.3}%
+\contentsline {subsection}{\numberline {（四）}正确性验证}{45}{subsection.4.4}%
+\contentsline {subsection}{\numberline {（五）}思考与启发}{46}{subsection.4.5}%
+\contentsline {section}{\numberline { 五、}总结}{46}{section.5}%
